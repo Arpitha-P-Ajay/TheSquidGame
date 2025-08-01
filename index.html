@@ -1,76 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Red Light Green Light - AI Motion Detection Game</title>
-    <meta name="description" content="Play the classic Red Light Green Light game with AI-powered motion detection using your webcam!">
-    
+    <meta
+      name="description"
+      content="Play the classic Red Light Green Light game with AI-powered motion detection using your webcam!"
+    />
+
     <!-- TensorFlow.js and Teachable Machine -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="game-container">
-        <h1 class="title">🚦 Red Light Green Light 🚦</h1>
-        
-        <!-- Game Stats -->
-        <div class="stats-container">
-            <div class="stat-card">
-                <div class="stat-value" id="score">0</div>
-                <div class="stat-label">Score</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value" id="round">0</div>
-                <div class="stat-label">Round</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value" id="lives">3</div>
-                <div class="stat-label">Lives</div>
-            </div>
+      <h1 class="title">🚦 Red Light Green Light 🚦</h1>
+
+      <!-- Game Stats -->
+      <div class="stats-container">
+        <div class="stat-card">
+          <div class="stat-value" id="score">0</div>
+          <div class="stat-label">Score</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="round">0</div>
+          <div class="stat-label">Round</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="lives">3</div>
+          <div class="stat-label">Lives</div>
+        </div>
+      </div>
+
+      <!-- Light Display -->
+      <div id="lightDisplay" class="light-display">Click Start to Play!</div>
+
+      <!-- Start/Stop Button -->
+      <button id="gameButton" class="game-button">Start Game</button>
+
+      <!-- Webcam Section -->
+      <div class="webcam-container">
+        <div id="webcamContainer"></div>
+
+        <!-- Movement Indicator -->
+        <div
+          id="movementIndicator"
+          class="movement-indicator"
+          style="display: none"
+        >
+          Movement: <span id="movementPercent">0</span>%
         </div>
 
-        <!-- Light Display -->
-        <div id="lightDisplay" class="light-display">
-            Click Start to Play!
+        <!-- Countdown Overlay -->
+        <div
+          id="countdownOverlay"
+          class="countdown-overlay"
+          style="display: none"
+        >
+          <div class="countdown-circle">
+            <span id="countdownNumber">3</span>
+          </div>
         </div>
+      </div>
 
-        <!-- Start/Stop Button -->
-        <button id="gameButton" class="game-button">Start Game</button>
+      <!-- Status -->
+      <div id="statusDisplay" class="status-display">
+        Welcome! Click Start Game to begin your challenge.
+      </div>
 
-        <!-- Webcam Section -->
-        <div class="webcam-container">
-            <div id="webcamContainer"></div>
-            
-            <!-- Movement Indicator -->
-            <div id="movementIndicator" class="movement-indicator" style="display: none;">
-                Movement: <span id="movementPercent">0</span>%
-            </div>
-            
-            <!-- Countdown Overlay -->
-            <div id="countdownOverlay" class="countdown-overlay" style="display: none;">
-                <div class="countdown-circle">
-                    <span id="countdownNumber">3</span>
-                </div>
-            </div>
-        </div>
+      <!-- Debug Info -->
+      <div id="debugContainer" class="debug-container"></div>
 
-        <!-- Status -->
-        <div id="statusDisplay" class="status-display">
-            Welcome! Click Start Game to begin your challenge.
-        </div>
-
-        <!-- Debug Info -->
-        <div id="debugContainer" class="debug-container"></div>
-        
-        <!-- Fallback message for when AI model isn't available -->
-        <div id="fallbackMessage" class="fallback-message" style="display: none;">
-            <h3>⚠️ AI Model Not Available</h3>
-            <p>The motion detection AI model couldn't be loaded. The game will use a simplified version with random detection for demonstration purposes.</p>
-        </div>
+      <!-- Fallback message for when AI model isn't available -->
+      <div id="fallbackMessage" class="fallback-message" style="display: none">
+        <h3>⚠️ AI Model Not Available</h3>
+        <p>
+          The motion detection AI model couldn't be loaded. The game will use a
+          simplified version with random detection for demonstration purposes.
+        </p>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

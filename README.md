@@ -56,12 +56,9 @@ For Software:
 <img width="947" height="503" alt="image" src="https://github.com/user-attachments/assets/9ca9ad18-fcdb-43fa-95dc-4dcf0e24e7c6" />
 
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
--- demo video
+# Demo Video
 
-
+https://github.com/user-attachments/assets/27fe2758-3df2-4df6-8674-5250eda971fe
 
 For Hardware:
 

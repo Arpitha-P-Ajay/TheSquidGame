@@ -1,34 +1,34 @@
 <img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
 
 
-# [Project Name] 🎯
+# Red Light_Green Light TheSquidGame 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: --(Individual)--
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Arpitha P Ajay - LBS Institute Of Technology for Women Poojappura Thiruvananthapuram
 
+### Hosted Project Link
+https://the-squid-game-nu.vercel.app/
+  
 ### Project Description
-[2-3 lines about what your project does]
+The Squid Game web app recreates iconic game from the TV show in a browser-based format, letting users play the game “Red Light, Green Light” in a virtual environment. 
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+Remember the childhood game "Red Light, Green Light"? It's nearly impossible to play alone - you need someone to watch and catch you moving during red lights. But what if AI could be your game master, watching your every move through your webcam ?
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+Finally you can play without judgements!
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- Languages used - HTML, CSS, JavaScript
+- Libraries used - Teachable Machine (@teachablemachine/image) - Pre-trained image classification models
+- Tools used - Teachable Machine Model (H5t9mZMw9) - Pre-trained motion detection classifier
 
 For Hardware:
 - [List main components]
@@ -47,18 +47,21 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+<img width="949" height="502" alt="image" src="https://github.com/user-attachments/assets/c3fdc861-b0a8-4825-807c-12e8b37da3f8" />
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+<img width="944" height="495" alt="image" src="https://github.com/user-attachments/assets/b2999630-8251-49a9-9068-f31e46cd004e" />
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+<img width="949" height="499" alt="image" src="https://github.com/user-attachments/assets/65193369-be36-49f8-8429-c5f796702681" />
+
+<img width="947" height="503" alt="image" src="https://github.com/user-attachments/assets/9ca9ad18-fcdb-43fa-95dc-4dcf0e24e7c6" />
+
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
 *Add caption explaining your workflow*
+-- demo video
+
+
 
 For Hardware:
 
@@ -88,9 +91,7 @@ For Hardware:
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Arpitha P Ajay
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
